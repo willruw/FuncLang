@@ -1,0 +1,21 @@
+(executable
+ (name Funclang)
+ (libraries funclanglib)
+ (modules funclang))
+
+(library
+ (name funclanglib)
+ (modules errors ast pst pstparser interpreter)
+ (preprocess (pps ppx_deriving.show)))
+
+(library
+ (name Funclangtest)
+ (modules funclangtest)
+ (libraries funclanglib)
+ (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))
+

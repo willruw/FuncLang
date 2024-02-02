@@ -1,0 +1,119 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /Users/work/FuncLang/FunctionalLanguage/FL/FunctionalLanguage
+# Auto-detected concurrency: 10
+$ /Users/work/.opam/default/bin/ocamlc.opt -config > /var/folders/bw/1_mpjg2s733gb4vm9ds9m9m80000gp/T/dune_367f1b_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/Users/work/.opam/default/bin"
+#  ; ocaml = Ok External "/Users/work/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/Users/work/.opam/default/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/work/.opam/default/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/work/.opam/default/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/Users/work/.opam/default/bin/ocamlmklib"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/Users/work/.opam/default/lib/ocaml:/Users/work/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/work/.opam/default/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/Users/work/FuncLang/FunctionalLanguage/FL/FunctionalLanguage"
+#        ; "INSIDE_DUNE" :
+#            "/Users/work/FuncLang/FunctionalLanguage/FL/FunctionalLanguage/_build/default"
+#        ; "MANPATH" :
+#            "/Users/work/FuncLang/FunctionalLanguage/FL/FunctionalLanguage/_build/install/default/man"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/work/FuncLang/FunctionalLanguage/FL/FunctionalLanguage/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/work/FuncLang/FunctionalLanguage/FL/FunctionalLanguage/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/work/FuncLang/FunctionalLanguage/FL/FunctionalLanguage/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/Users/work/.opam/default/lib/ocaml"
+#      ; External "/Users/work/.opam/default/lib"
+#      ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "5.1.0"
+#      ; standard_library_default = "/Users/work/.opam/default/lib/ocaml"
+#      ; standard_library = "/Users/work/.opam/default/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "arm64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "cc"; "-c"; "-Wno-trigraphs" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "aarch64-apple-darwin22.6.0"
+#      ; target = "aarch64-apple-darwin22.6.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X033"
+#      ; cmi_magic_number = "Caml1999I033"
+#      ; cmo_magic_number = "Caml1999O033"
+#      ; cma_magic_number = "Caml1999A033"
+#      ; cmx_magic_number = "Caml1999Y033"
+#      ; cmxa_magic_number = "Caml1999Z033"
+#      ; ast_impl_magic_number = "Caml1999M033"
+#      ; ast_intf_magic_number = "Caml1999N033"
+#      ; cmxs_magic_number = "Caml1999D033"
+#      ; cmt_magic_number = "Caml1999T033"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/work/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I src/.Funclang.eobjs/byte -I /Users/work/.opam/default/lib/ppx_deriving/runtime -I /Users/work/.opam/default/lib/result -I src/.funclanglib.objs/byte -no-alias-deps -opaque -o src/.Funclang.eobjs/byte/dune__exe__Funclang.cmo -c -impl src/funclang.ml)
+$ (cd _build/default && /Users/work/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.Funclang.eobjs/byte -I src/.Funclang.eobjs/native -I /Users/work/.opam/default/lib/ppx_deriving/runtime -I /Users/work/.opam/default/lib/result -I src/.funclanglib.objs/byte -I src/.funclanglib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o src/.Funclang.eobjs/native/dune__exe__Funclang.cmx -c -impl src/funclang.ml)
+$ (cd _build/default && /Users/work/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -o src/Funclang.exe /Users/work/.opam/default/lib/result/result.cmxa /Users/work/.opam/default/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa src/funclanglib.cmxa src/.Funclang.eobjs/native/dune__exe__Funclang.cmx)
